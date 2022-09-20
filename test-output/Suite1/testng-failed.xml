@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.Treshna.genericUtility.ListnerImplementation"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="org.Treshna.practice.ScreenshotPractice2">
+        <methods>
+          <include name="MethodTearDown"/>
+          <include name="ClassSetUp"/>
+          <include name="screenshot"/>
+          <include name="classTearDown"/>
+          <include name="methodSetUP1"/>
+        </methods>
+      </class> <!-- org.Treshna.practice.ScreenshotPractice2 -->
+      <class name="org.Treshna.practice.ScreenshotPractice">
+        <methods>
+          <include name="MethodTearDown"/>
+          <include name="ClassSetUp"/>
+          <include name="classTearDown"/>
+          <include name="screenshot"/>
+          <include name="methodSetUP1"/>
+        </methods>
+      </class> <!-- org.Treshna.practice.ScreenshotPractice -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
