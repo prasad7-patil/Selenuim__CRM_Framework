@@ -28,7 +28,7 @@ public class BaseClass {
 	public static WebDriver sdriver;
 	public static JavaUtility SjavaUtility;
 	protected SoftAssert softAssert;
-	
+	//hello--changes by TE1
 
 	/**
 	 * initialize the all utility class
