@@ -274,7 +274,10 @@ public class WebDriverUtility {
 	public void downcastJavaScriptExecutor(WebDriver driver) {
 		jsExecutor = (JavascriptExecutor)driver;
 	}
-
+/**
+ * This method is used to scroll up by 1000 units
+ * @param driver
+ */
 	public void scrollUpByJS(WebDriver driver) {
 		jsExecutor.executeScript("window.scrollTo(0,-1000)");
 	}
