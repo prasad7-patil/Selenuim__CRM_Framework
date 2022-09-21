@@ -261,7 +261,7 @@ public class WebDriverUtility {
 
 		return destFile.getAbsolutePath();
 	}
-	
+
 	public String screenshot(WebDriver driver) throws Throwable {
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		String tempfile = ts.getScreenshotAs(OutputType.BASE64);
@@ -270,14 +270,14 @@ public class WebDriverUtility {
 
 
 
-	
+
 	public void downcastJavaScriptExecutor(WebDriver driver) {
 		jsExecutor = (JavascriptExecutor)driver;
 	}
-/**
- * This method is used to scroll up by 1000 units
- * @param driver
- */
+	/**
+	 * This method is used to scroll up by 1000 units
+	 * @param driver
+	 */
 	public void scrollUpByJS(WebDriver driver) {
 		jsExecutor.executeScript("window.scrollTo(0,-1000)");
 	}
@@ -285,7 +285,7 @@ public class WebDriverUtility {
 	public void ScrollToBottomPage() {
 		jsExecutor.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 	}
-	
+
 	public void eventStartTimeDropdown(WebElement element1,WebElement element2,WebElement element3,String hour,String minute,String seconds) {
 		Select select1 = new Select(element1);
 		select1.selectByVisibleText(hour);
@@ -294,7 +294,7 @@ public class WebDriverUtility {
 		Select select3 = new Select(element3);
 		select3.selectByVisibleText(seconds);
 	}
-	
+
 	public void eventEndTimeDropdown(WebElement element1,WebElement element2,WebElement element3,String hour,String minute,String seconds) {
 		Select select1 = new Select(element1);
 		select1.selectByVisibleText(hour);
@@ -303,10 +303,10 @@ public class WebDriverUtility {
 		Select select3 = new Select(element3);
 		select3.selectByVisibleText(seconds);
 	}
-	
-	
-	
-	
+
+
+
+
 
 
 
