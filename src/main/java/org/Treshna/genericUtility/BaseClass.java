@@ -29,6 +29,7 @@ public class BaseClass {
 	public static JavaUtility SjavaUtility;
 	protected SoftAssert softAssert;
 	
+	//HELLO -->changes by te1
 
 	/**
 	 * initialize the all utility class
