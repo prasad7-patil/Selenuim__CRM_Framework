@@ -54,8 +54,9 @@ public class Tc_005_AddAnEvent extends BaseClass {
 		CalenderHomePage calenderHomePage=new CalenderHomePage(driver);
 		commonPage.clickOnRequiredTab(TabNames.Calendar, webDriverUtility);
 		webDriverUtility.waitTillElementVisible(driver, timeout,calenderHomePage.calenderHomePageText());
-		calenderHomePage.clickOnAllEventsAndTodosButton();
-		int count=0;
+		calenderHomePage.clickByjs(webDriverUtility);
+		//calenderHomePage.clickOnAllEventsAndTodosButton();
+		
 		for (WebElement nameOfEvent : calenderHomePage.listOfAllEventNames()) {
 			if (nameOfEvent.getText().contains(eventName)) {
 				System.out.println("PASS:Successfully created the event");
@@ -63,10 +64,10 @@ public class Tc_005_AddAnEvent extends BaseClass {
 				
 			}		
 		}
-		count++;
-		if (count==1) {
-			System.out.println("FAIL:event not created");
-		}
+//		count++;
+//		if (count==1) {
+//			System.out.println("FAIL:event not created");
+//		}
 	
 	}
 }

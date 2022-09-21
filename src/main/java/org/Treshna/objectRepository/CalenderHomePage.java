@@ -2,6 +2,7 @@ package org.Treshna.objectRepository;
 
 import java.util.List;
 
+import org.Treshna.genericUtility.WebDriverUtility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CalenderHomePage {
 
-	@FindBy(xpath="//td[text()='All Events & Todos']")
+	@FindBy(xpath="//a[text()='All Events & Todos']")
 	private WebElement allEventsAndTodosButton;
 	
 	@FindBy(xpath="//a[text()='Subject']/ancestor::tr/following-sibling::tr[@class='lvtColData']//span[@vtfieldname='subject']")
@@ -27,6 +28,11 @@ public class CalenderHomePage {
 	public void clickOnAllEventsAndTodosButton() {
 		allEventsAndTodosButton.click();
 	}
+	
+	public void clickByjs(WebDriverUtility webdriverUtility) {
+		webdriverUtility.clickByJavaScripExecutor(allEventsAndTodosButton);
+	}
+	
 	public List<WebElement> listOfAllEventNames() {
 		return listOfEventNames;
 	}
