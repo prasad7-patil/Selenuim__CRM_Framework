@@ -29,12 +29,6 @@ public class BaseClass {
 	public static JavaUtility SjavaUtility;
 	protected SoftAssert softAssert;
 
-	//hello--changes by TE2
-
-	
-	//HELLO -->changes by te1
-
-
 	/**
 	 * initialize the all utility class
 	 * open excel, property file
