@@ -67,7 +67,6 @@ public class CreatingEventPage {
 			MM=splittedTime[1];
 			PM=splittedTime[2];
 		}
-		System.out.println(HH);
 		
 		webDriverUtility.eventStartTimeDropdown(eventStartinghour, eventStartingMinute, eventStartFormat, HH, MM, PM);
 		eventStartDateTextArea.clear();

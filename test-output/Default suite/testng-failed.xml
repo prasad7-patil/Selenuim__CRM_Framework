@@ -7,7 +7,7 @@
         <methods>
           <include name="MethodTearDown"/>
           <include name="ClassSetUp"/>
-          <include name="AddAnEventToOrganization"/>
+          <include name="AddAnEventToOrganization" invocation-numbers="0"/>
           <include name="classTearDown"/>
           <include name="methodSetUP1"/>
         </methods>
