@@ -28,6 +28,15 @@ public class BaseClass {
 	public static WebDriver sdriver;
 	public static JavaUtility SjavaUtility;
 	protected SoftAssert softAssert;
+<<<<<<< HEAD
+=======
+
+	//hello--changes by TE2
+
+	
+	//HELLO -->changes by te1
+
+>>>>>>> branch 'project1' of https://github.com/prasad7-patil/Treshna.git
 
 	/**
 	 * initialize the all utility class
@@ -39,6 +48,7 @@ public class BaseClass {
 	 * initialize the java script executor, waibdriver wait
 	 * create the instance for common object repo
 	 */
+	
 	@BeforeClass
 
 	public void ClassSetUp() {

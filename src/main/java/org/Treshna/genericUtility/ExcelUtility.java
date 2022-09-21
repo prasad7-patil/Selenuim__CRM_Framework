@@ -15,7 +15,10 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 //hello changes are done in excel utility
+<<<<<<< HEAD
 //hello2
+=======
+>>>>>>> branch 'project1' of https://github.com/prasad7-patil/Treshna.git
 /**
  * @param
  * This Class consists of all common action that are required to fetch data from excel
