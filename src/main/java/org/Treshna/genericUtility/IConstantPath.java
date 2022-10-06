@@ -7,6 +7,6 @@ public interface IConstantPath {
 /**
  * This interface consist of all path related to excel and property
  */
-	String EXCEL_PATH=System.getProperty("user.dir")+"/src/test/resources/testdata.xlsx";
+	String EXCEL_PATH=System.getProperty("user.dir")+"/src/test/resources/campaign.testdata.xlsx";
 	String PROPERTY_PATH=System.getProperty("user.dir")+"/src/test/resources/commondata.properties";
 }

@@ -34,15 +34,15 @@ public class ExcelUtility {
 	 * this method helps to write the data in excel
 	 * @param excelPath
 	 * @param sheetName
-	 * @param rowNumber
-	 * @param columnNumber
+	 * @param string
+	 * @param string2
 	 * @return
 	 * 
 	 */ 
-	public String getDataFromExcel( String sheetName, int rowNumber, int columnNumber ) {
+	public String getDataFromExcel( String sheetName,String requiredKey, String testCaseName ) {
 
 		Sheet sheet = workbook.getSheet(sheetName);
-		String data = new DataFormatter().formatCellValue(sheet.getRow(rowNumber).getCell(columnNumber));
+		String data = new DataFormatter().formatCellValue(sheet.getRow(1).getCell(0));
 		return data;
 
 	}
